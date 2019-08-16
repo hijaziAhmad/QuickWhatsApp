@@ -1,0 +1,16 @@
+QuickWhatsApp
+=============
+version 1.0 by HA
+
+1. Introduction
+Enables user to start a conversation without saving the contact numbers.
+
+2. Feature
+2.1 Checks if the phone number entered are incomplete (i.e less than 10 digits).
+2.2 Automatically add international caller id if the user forgot to put it. 
+2.3 Clear the input field if any error occurs, so user can enter the correct number right away.
+
+3. Future Planning
+3.1 Include a paste function
+3.2 Create a drop-down International caller id so user can select directly and let the system decide if user accidently put it in the input form
+3.3 Create an option to add template messages for quicker interactions.
