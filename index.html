@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // PhoneGap event handler
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            console.log("PhoneGap is ready");
+        }
+        function quickfn(){
+          var pn = document.getElementById("phoneNumber").value;
+          if (pn.length<10 || pn.length>12){
+            alert("Please enter a correct phone number!");
+            document.getElementById("phoneNumber").value="";
+          }
+          else{
+            if (pn[0]!=6){
+              pn="6"+pn;
+            }
+            pn="http://wa.me/"+pn+"?text=Hi%20there, I'm%20";
+          window.open(pn,"_system");
+          }};
+
+   
+    </script>
+</head>
+<body>
+
+    <h1>Quick WhatsApp</h1>
+    <h2>Put in the phone number or click on the paste button continue</h2>
+    
+    <input type="number" id="phoneNumber" >
+ 
+    </input>
+    <button class="qwa" onClick="quickfn()">Quicky</button>
+
+</body>
+</html>

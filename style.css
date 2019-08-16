@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.no-focus-outline a:focus,
+.no-focus-outline button:focus {
+  outline: none;
+}
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    font-family: 'Montserrat';
+}
+
+h1 {
+    
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+    width: 100%;
+    color: #808080;
+}
+
+h2 {
+    
+    text-align: center;
+    font-size: 15px;
+    padding: 0;
+    width: 100%;
+    color: #808080;
+}
+#phoneNumber{
+  margin: 10%;
+  width: 80%;
+  padding: 4px 0px;
+  align-content: center;
+  text-align: center;
+  height: 36px;
+  font-size: 30px;
+  color: #808080;
+  background: #f5f5f5;
+  border-top: #075e54 2px solid;
+  border-bottom: #075e54 2px solid;
+  border-left: none;
+  border-right: none;
+  resize: none;
+  overflow: hidden;
+  font-family: montserrat;
+  letter-spacing: 3px;
+}
+/**#phoneNumber:focus{
+color: none;
+border-top: red 2px solid;
+border-bottom: blue 2px solid;
+ }**/
+
+.qwa{
+border: white 2px solid;
+background-color: #075e54;
+color: white;
+font-style: bold;
+box-shadow: 0 10px 8px #999;
+margin: 0 10%;
+font-size: 30px;
+padding: 5%;
+font-family: Montserrat;
+width: 80%;
+align-content: center;
+}
